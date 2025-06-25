@@ -1,0 +1,214 @@
+div {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #E6F3FF 0%, #F0E6FF 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background: rgba(210, 134, 248, 0.9);
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.profile-photo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #B8E0FF, #D4B8FF);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #4A90E2;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.site-title {
+    font-family:'Times New Roman', Times, serif ;
+    color: #000000;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+/* Navigation Styles */
+.navigation-menu {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 0.5rem;
+    margin: 0;
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links a {
+    display: block;
+    padding: 0.6rem 1rem;
+    background: linear-gradient(45deg, #e4f3ff, #e4f3ff);
+    color: #4A90E2;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    text-align: center;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.nav-links a:hover {
+    background: linear-gradient(45deg, #A3D5FF, #C9A3FF);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(74, 144, 226, 0.3);
+}
+
+.nav-links a.active {
+    background: linear-gradient(45deg, #4A90E2, #8B6FB8);
+    color: white;
+    box-shadow: 0 4px 15px rgba(74, 144, 226, 0.4);
+}
+
+.main-container {
+    flex: 1;
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.page-title {
+    font-family: cursive;
+    color: #4A90E2;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+.content-section {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    margin-bottom: 2rem;
+}
+
+.education-item {
+    margin-bottom: 2.5rem;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    border-left: 5px solid #4A90E2;
+}
+
+.education-item:last-child {
+    margin-bottom: 0;
+}
+
+.education-level {
+    color: #4A90E2;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.school-name {
+    color: #8B6FB8;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.education-details {
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.achievement-section {
+    background: linear-gradient(45deg, #B8E0FF, #D4B8FF);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+.achievement-title {
+    color: #4A90E2;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.achievement-list {
+    color: #333;
+    list-style: none;
+    padding-left: 1rem;
+}
+
+.achievement-list li {
+    margin-bottom: 0.3rem;
+    position: relative;
+}
+
+.achievement-list li:before {
+    content: "★";
+    color: #8B6FB8;
+    position: absolute;
+    left: -1rem;
+}
+
+.year-badge {
+    background: #4A90E2;
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+.footer {
+    background: rgba(210, 134, 248, 0.9);
+    padding: 1rem 2rem;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(74, 144, 226, 0.2);
+}
+
+.footer a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}

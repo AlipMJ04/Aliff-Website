@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aliff Portfolio</title>
+    <link rel="stylesheet" href="home.html">
+    <link rel="stylesheet" href="student.css">
+    </head>
+<body>
+    <header class="header">
+        <a href="#home" class="logo-section" onclick="showHome()">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Ccircle cx='40' cy='40' r='38' fill='%23667eea' stroke='white' stroke-width='4'/%3E%3Ctext x='40' y='50' text-anchor='middle' fill='white' font-size='24' font-weight='bold'%3EA%3C/text%3E%3C/svg%3E" alt="Aliff Logo" class="logo-image">
+            <span class="logo-text">Aliff Portfolio</span>
+        </a>
+        
+        <nav class="navigation-menu">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="background_study.html">Background Study</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="achievement.html">Achievement</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+        
+    <div class="content-card">
+        <div class="profile-section">
+            <img src="image/profile photo2.jpg" alt="Muhammad Aliff Profile Photo" class="profile-image">
+            
+            <div class="student-info">
+                <h2 class="info-title">Student Information</h2>
+                <div class="info-item">
+                    <span class="info-label">Title:</span>
+                    <span class="info-value">Portfolio Website</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Name:</span>
+                    <span class="info-value">Muhammad Aliff Bin Muhammad Jamal</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Student ID:</span>
+                    <span class="info-value">2024672236</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Group:</span>
+                    <span class="info-value">CDIM2632A</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Course Code:</span>
+                    <span class="info-value">IMS458</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Course Name:</span>
+                    <span class="info-value">Web Design and Development</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Program Code:</span>
+                    <span class="info-value">CDIM263</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Faculty:</span>
+                    <span class="info-value">Faculty of Information Science</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Submission Date:</span>
+                    <span class="info-value">26 June 2025</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Published URL:</span>
+                    <span class="info-value">[Your Website URL]</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p><a href="#privacy">Privacy Policy</a> | © 2025 Muhammad Aliff Bin Muhammad Jamal</p>
+    </footer>
+
+
+    <script>
+        function showHome() {
+            updateActiveButton('home');
+            console.log('Navigating to Home page');
+        }
+
+        function showProfile() {
+            updateActiveButton('profile');
+            console.log('Navigating to Profile page');
+        }
+
+        function showBackground() {
+            updateActiveButton('background');
+            console.log('Navigating to Background Study page');
+        }
+
+        function showSkills() {
+            updateActiveButton('skills');
+            console.log('Navigating to Skills page');
+        }
+
+        function showAchievement() {
+            updateActiveButton('achievement');
+            console.log('Navigating to Achievement page');
+        }
+
+        function showContact() {
+            updateActiveButton('contact');
+            console.log('Navigating to Contact page');
+        }
+
+        function updateActiveButton(activeSection) {
+            const buttons = document.querySelectorAll('.nav-links a');
+            buttons.forEach(button => button.classList.remove('active'));
+            
+            const activeButton = document.querySelector(`a[href="${activeSection}.html"]`);
+            if (activeButton) {
+                activeButton.classList.add('active');
+            }
+        }
+    </script>
+</body>
+</html>

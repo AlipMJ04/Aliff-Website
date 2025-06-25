@@ -1,0 +1,228 @@
+div {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #E6F3FF 0%, #F0E6FF 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background: rgba(210, 134, 248, 0.9);
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.profile-photo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #B8E0FF, #D4B8FF);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #4A90E2;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.site-title {
+    font-family:'Times New Roman', Times, serif ;
+    color: #000000;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 0.5rem;
+    margin: 0;
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links a {
+    display: block;
+    padding: 0.6rem 1rem;
+    background: linear-gradient(45deg, #e4f3ff, #e4f3ff);
+    color: #4A90E2;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    text-align: center;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.nav-links a:hover {
+    background: linear-gradient(45deg, #A3D5FF, #C9A3FF);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(74, 144, 226, 0.3);
+}
+
+.nav-links a.active {
+    background: linear-gradient(45deg, #4A90E2, #8B6FB8);
+    color: white;
+    box-shadow: 0 4px 15px rgba(74, 144, 226, 0.4);
+}
+
+.main-container {
+    flex: 1;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.page-title {
+    font-family: cursive;
+    color: #000000;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.skill-category {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.category-title {
+    color: #4A90E2;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    border-bottom: 2px solid #B8E0FF;
+    padding-bottom: 0.5rem;
+}
+
+.skill-item {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    border-left: 4px solid #8B6FB8;
+}
+
+.skill-name {
+    color: #4A90E2;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.skill-level {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.skill-level-text {
+    color: #8B6FB8;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.skill-bar {
+    width: 100px;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.skill-progress {
+    height: 100%;
+    background: linear-gradient(45deg, #4A90E2, #8B6FB8);
+    border-radius: 4px;
+}
+
+.skill-description {
+    color: #333;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.beginner { width: 30%; }
+.intermediate { width: 60%; }
+.advanced { width: 85%; }
+.expert { width: 95%; }
+
+.additional-skills {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    grid-column: 1 / -1;
+}
+
+.skills-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.skill-tag {
+    background: linear-gradient(45deg, #6f71ff, #6f71ff);
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.footer {
+    background: rgba(210, 134, 248, 0.9);
+    padding: 1rem 2rem;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(74, 144, 226, 0.2);
+}
+
+.footer a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
